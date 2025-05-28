@@ -150,7 +150,7 @@ app.get('/consulta/usuarios', (req: Request, res: Response) => {
   });
 })
 
-app.get('/api/menus', (req: Request, res: Response<ApiResponse<MenuRequest[]>>) => {
+app.get('/menus', (req: Request, res: Response<ApiResponse<MenuRequest[]>>) => {
   res.status(200).json({
     success: true,
     message: "Consulta realizada com sucesso",
