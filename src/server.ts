@@ -203,6 +203,6 @@ io.on('connection', socket => {
   });
 });
 
-httpServer.listen(3001, () => {
+httpServer.listen(3001, '0.0.0.0', () => {
   console.log('🚀 API & WS rodando em http://localhost:3001');
 });
