@@ -103,7 +103,7 @@ async function listarGrupos() {
   }
 }
 
-app.post('/api/auth/login', (req: Request, res: Response<ApiResponse<string>>) => {
+app.post('/auth/login', (req: Request, res: Response<ApiResponse<string>>) => {
   const { usuario, senha } = req.body as LoginRequest;
 
   if (!usuario || !senha) {
